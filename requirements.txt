@@ -1,0 +1,80 @@
+# Core LangChain packages
+langchain>=0.3.26
+langchain-community>=0.2.0  
+langchain-core>=0.2.0
+langchain-ollama>=0.1.1
+langchain-text-splitters>=0.2.0
+langchain-huggingface==0.1.0  # 降级：避免依赖冲突，兼容性更好
+
+# Document processing
+PyPDF2==3.0.1
+pdfplumber==0.10.0
+python-docx==1.1.0
+
+# Vector storage and retrieval
+faiss-cpu==1.7.4
+chromadb==0.4.22
+sentence-transformers==2.7.0  # 稳定版本：兼容CrossEncoder模型加载
+huggingface_hub==0.33.4  # 实际兼容版本，解决依赖冲突
+
+# Cross-encoder for reranking (included in sentence-transformers)
+# cross-encoder>=1.2.0  # 不需要单独安装，已包含在 sentence-transformers 中
+
+# BM25 retrieval
+rank-bm25==0.2.2
+
+# Text processing
+jieba==0.42.1
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Data processing
+pandas>=1.5.0
+numpy>=1.24.0,<2.0  # 确保与FAISS兼容，避免NumPy 2.x问题
+openpyxl==3.1.2
+
+# Web interface
+streamlit>=1.28.0
+gradio==4.10.0
+
+# Utilities
+tqdm==4.66.1
+python-dotenv==1.0.0
+tiktoken>=0.5.0
+
+# HTTP requests
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Ollama integration
+ollama>=0.1.7
+
+# Machine learning
+scikit-learn>=1.3.0
+transformers==4.53.2  # 实际安装的版本，与所有依赖兼容
+torch==2.1.2  # 稳定版本，解决assign参数兼容性问题
+torchvision==0.16.2  # 与torch 2.1.2兼容的版本
+
+# Additional ML libraries for enhanced features
+spacy>=3.6.0
+nltk>=3.8
+textstat>=0.7.0
+
+# Logging and configuration
+loguru>=0.7.0
+pydantic>=2.0.0
+
+# Compatibility dependencies
+tokenizers==0.21.2  # 实际兼容版本，解决依赖冲突
+
+# Additional dependencies for stability
+safetensors>=0.4.0  # transformers依赖
+scipy>=1.10.0       # sentence-transformers依赖
+regex>=2023.0.0     # transformers依赖
+filelock>=3.12.0    # 多个包的共同依赖
+
+# Version compatibility notes:
+# - torch 2.1.2: 避免assign参数兼容性问题
+# - sentence-transformers 2.7.0: 稳定版本，CrossEncoder模块工作正常
+# - transformers 4.53.2: 最终兼容版本，经过依赖解析验证
+# - langchain-huggingface 0.1.0: 避免版本冲突，功能完整 

@@ -1,0 +1,7 @@
+{
+  "diversity_weight": 0.3,
+  "max_docs_per_source": 2,
+  "reranker_diversity_weight": 0.2,
+  "timestamp": "2025-07-15T09:56:52",
+  "status": "applied"
+}

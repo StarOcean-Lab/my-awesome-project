@@ -1,0 +1,7 @@
+{
+  "chunk_size": 800,
+  "chunk_overlap": 100,
+  "search_type": "similarity_score_threshold",
+  "score_threshold": 0.7,
+  "k": 5
+}

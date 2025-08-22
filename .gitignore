@@ -1,0 +1,113 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+conda-meta/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Large Model Files
+bge-large-zh-v1.5/
+cross-encoder/
+
+# Vector Database (向量数据库)
+vectorstore/
+*.faiss
+*.pkl
+
+# Logs and Temporary Files (日志和临时文件)
+logs/
+*.log
+*.tmp
+*.temp
+~$*.xlsx
+*.bak
+
+# Data and Outputs (数据和输出文件)
+data/
+outputs/
+answers/
+*.xlsx
+*.pdf
+
+# Cache and Knowledge Base (缓存和知识库)
+.cache/
+knowledge_base/
+__pycache__/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Test Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Configuration files that might contain sensitive data
+config_local.py
+.env
+.env.local
+*.env
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
